@@ -19,7 +19,6 @@ const CardList = () => {
   if (isLoading) {
     return <p data-testid="loading">Loading &hellip;</p>;
   }
-  console.log(searchData);
   if (things.length > 0) {
     return things.map((t) => <OptionCard t={t} key={t.id} />);
   } else {
