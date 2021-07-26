@@ -1,1 +1,2 @@
 odin/config.js filter=git-crypt diff=git-crypt
+thor/src/config.js filter=git-crypt diff=git-crypt
