@@ -25,6 +25,7 @@ class BackendApi {
     try {
       return (await axios({ url, method, data, params })).data;
     } catch (err) {
+      console.log(BASE_URL)
       console.error("API Error:", err.response);
       let message = err.response.data.error.message;
       throw Array.isArray(message) ? message : [message];
